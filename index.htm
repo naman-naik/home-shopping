@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<link rel="icon" sizes="192x192" href="icon.jpg">
+<link rel="shortcut icon" type="image/x-icon" href="icon.jpg">
+<title>Home Shopping Site/Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ body {background-color:black;
+       color:white;
+	   }
+ .top{font-size:30px;
+      }
+ .cart{background-color:black;
+       position:fixed;
+       right:3px;
+       top:8px;
+	   padding:2px;}
+ .line3 {background-color:black;
+          position:fixed;
+          left:2px;
+          top:8px;
+		  padding:2px;}	   
+ .hidden {font-size:30px;
+          text-align:center;
+          padding:20px; 
+          background-color:brown;
+          width:30%;
+          height:500px;
+		  position:fixed;
+		  }
+ .link {text-decoration:none;
+        color:white;}
+ .active{background-color:white;
+         color:brown; }
+  .main{background-color:gray;
+        color:black;
+		padding:15px;
+		border-radius:2%;} 
+   p {text-align:center;}	 
+   .search{position:fixed;
+           left:73px;
+		   }
+	.go {background-color:blue;
+	     font-size:18px;
+		 position:fixed;
+		 top:20.5px;
+		 text-align:center;
+		 width:30px;}
+    .end {background-color:gray;
+		  width:80px;
+		  position:absolute;
+		  left:42%;
+		  text-align:center;
+	      }	
+    .buy {background-color:black;
+	      color:white;
+	      font-size:15px;
+		  border-radius:30%;
+		  padding:3px;
+		  position:relative;
+		  top:-30px;
+		  right:-92%;
+		  }	
+    .buywindow {background-color:brown;
+	            text-align:center;
+				font-size:20px;
+				padding:20px;
+				width:200px;
+				border:4px solid darkred;
+				border-radius:6%;
+				position:fixed;
+				left:25%;
+				top:32%;
+				display:none;}		  
+</style>
+
+</head>
+<body >
+
+
+
+<div class="top">
+    <div class="line3" onclick="nmn_open()">☰</div>
+	<div class="search"><input placeholder="Search..." type="search"><span class="go">Go</span></div>
+    <div class="cart"><a class="link" href="cart.htm">\<u>Cart</u>/</a></div>
+</div><br><br>
+
+  
+
+<nav style="display:none;" id="mySidebar">
+  <div  class="hidden">
+    <a onclick="nmn_close()">Close Menu</a><br><br>
+    <a href="index.htm" class="active link" >Home</a><br><br>
+    <a href="account.htm" class="link" onclick="nmn_close()" >Account</a><br><br>
+    <a href="about.htm" class="link" onclick="nmn_close()" >About</a><br><br>
+  </div>
+</nav>
+
+  <div class="buywindow" id="shortwindow">
+    <div>Add To Cart</div><hr>
+    <div>More Details</div><hr>
+	<div>Review</div><hr>
+    <div onclick="nmn2close()">Cancel</div><br>
+  </div>
+
+  <br><div class="main">
+<h3><span class="buy" onclick="nmn2open()">Buy..</span>
+Snapdeal
+HMTe HM-9072 Metal Analog Men's Watch
+₹449.00 INR*· In stock·Brand: HMTe
+Buy HMTe HM-9072 Metal Analog Men's Watch online at best prices in India. Shop online for HMTe HM-9072 Metal Analog Men's Watch only on Snapdeal.</h3>
+<p><img src="shopping1.jpg" alt="Can't Load The Image" width="100%"></p>
+</div><br>
+<hr>
+<div class="main">
+<h3><span class="buy" onclick="nmn2open()">Buy..</span>
+Gadgets Now
+OPPO F11
+₹17,990.00 INR*· In stock·Brand: OPPO
+... smartphone runs on Android v9.0 (Pie) operating system. The phone is powered by Octa core (2.1 GHz, Quad core, Cortex A73 + 2 GHz, Quad core, ...
+* Check website for latest pricing and availability. Images may be subject to copyright.</h3>
+<p><img src="shopping2.jpg" alt="Can't Load The Image" width="100%"></p>
+</div>
+  
+ <br><hr>
+ <div class="main">
+<h3><span class="buy" onclick="nmn2open()">Buy..</span>
+Shopee
+Floral Print Long Sleeve Chiffon Casual Midi Dress Women
+· ₱591.00 PHP*· In stock·Brand: 0
+size(cm/inch) , S: Haba 114 / 44.9" Dibdib 90 / 35.4" Balikat 38 / 15.0" Sleeve 58 / 22.8", M: Haba 114 / 44.9" Dibdib 94 / 37.0" Balikat 39 / 15.4" .</h3>
+<p><img src="shopping3.jpg" alt="Can't Load The Image" width="100%"></p>
+</div> 
+  
+  <br><hr><div class="main">
+<h3><span class="buy" onclick="nmn2open()">Buy..</span>
+Allen Solly
+Allen Solly Green Dress
+₹1,350.00 INR*· In stock·Brand: Allen Solly
+Ace a smart look in this green solid dress from Solly by Allen Solly.
+* Check website for latest pricing and availability</h3>
+<p><img src="shopping4.jpg" alt="Can't Load The Image" width="100%"></p>
+</div>
+  
+  <br><hr><div class="main">
+<h3><span class="buy" onclick="nmn2open()">Buy..</span>
+Myntra
+Tokyo Talkies Black Floral Print Flared Maxi Dress with a Belt
+· ₹1,124.00 INR*· In stock·Brand: Tokyo Talkies
+* Check website for latest pricing and availability.</h3>
+<p><img src="shopping5.jpg" alt="Can't Load The Image" width="100%"></p>
+</div>
+  
+  <br><hr><div class="main">
+<h3><span class="buy" onclick="nmn2open()">Buy..</span>
+Alaia
+Velvet skating-style dress
+₹172,419.90 INR*· In stock
+Black
+* Check website for latest pricing and availability.</h3>
+<p><img src="shopping6.jpg" alt="Can't Load The Image" width="100%"></p>
+</div><br><hr>
+  
+ <br> <div class="end">More..</div><br><br>
+  
+<script>
+
+function nmn_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function nmn_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function nmn2open() {
+  document.getElementById("shortwindow").style.display = "block";
+}
+ 
+function nmn2close() {
+  document.getElementById("shortwindow").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
